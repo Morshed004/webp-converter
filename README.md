@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebP Convert
 
-## Getting Started
+A modern, fast, and sleek web application built to instantly convert JPG and PNG images into the highly optimized WebP format. This project is built using the latest web technologies to provide a premium user experience with real-time feedback, smooth animations, and secure server-side image processing.
 
-First, run the development server:
+## 🚀 Features
+
+- **Instant Conversion**: Convert your `.jpg`, `.jpeg`, and `.png` images to `.webp` effortlessly.
+- **Premium UI/UX**: Built with modern design principles featuring glassmorphism, animated background effects, smooth transitions, and responsive grid layouts.
+- **Client-Side Validation**: Ensures uploaded files are of the correct format and do not exceed the 10MB limit.
+- **Visual Feedback**: Real-time progress bar, simulated upload states, and animated status alerts (success/error).
+- **Auto-Download**: Automatically triggers the download of the converted WebP image once processing is complete.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Components**: [shadcn/ui](https://ui.shadcn.com/) & [Radix UI](https://www.radix-ui.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Image Processing**: [Sharp](https://sharp.pixelplumbing.com/) (Node.js backend)
+- **Package Manager**: [Bun](https://bun.sh/)
+
+## 📂 Project Structure
+
+- `app/page.tsx`: The main user interface containing the drag-and-drop upload form and animations.
+- `app/api/convert/route.ts`: The backend API endpoint that securely handles the image upload and uses `sharp` to convert the file to WebP format.
+- `components/ui/`: Reusable UI components from shadcn (e.g., Button, Card, Badge, Progress, Alert).
+
+## 💻 Getting Started
+
+### Prerequisites
+
+Ensure you have [Bun](https://bun.sh/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   cd image-convert
+   ```
+
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+### Running the Development Server
+
+Start the local development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+bun run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bun run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design Philosophy
 
-## Deploy on Vercel
+The application interface is designed to wow the user. It moves away from generic defaults by utilizing:
+- **Dark Mode Elegance**: A deep slate and violet palette (`slate-950` to `slate-900`) combined with subtle glow effects.
+- **Micro-Animations**: Hover states, loading spinners, pulsating icons, and smooth layout transitions keep the app feeling alive and responsive.
+- **Clear Typography**: Crisp, modern sans-serif fonts combined with gradient text fills for headers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the [MIT License](LICENSE).
