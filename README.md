@@ -75,7 +75,3 @@ The application interface is designed to wow the user. It moves away from generi
 - **Dark Mode Elegance**: A deep slate and violet palette (`slate-950` to `slate-900`) combined with subtle glow effects.
 - **Micro-Animations**: Hover states, loading spinners, pulsating icons, and smooth layout transitions keep the app feeling alive and responsive.
 - **Clear Typography**: Crisp, modern sans-serif fonts combined with gradient text fills for headers.
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
