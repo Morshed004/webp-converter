@@ -1,4 +1,4 @@
-# WebP Convert
+# WebP Converter
 
 A modern, fast, and sleek web application built to instantly convert JPG and PNG images into the highly optimized WebP format. This project is built using the latest web technologies to provide a premium user experience with real-time feedback, smooth animations, and secure server-side image processing.
 
@@ -25,49 +25,6 @@ A modern, fast, and sleek web application built to instantly convert JPG and PNG
 - `app/page.tsx`: The main user interface containing the drag-and-drop upload form and animations.
 - `app/api/convert/route.ts`: The backend API endpoint that securely handles the image upload and uses `sharp` to convert the file to WebP format.
 - `components/ui/`: Reusable UI components from shadcn (e.g., Button, Card, Badge, Progress, Alert).
-
-## 💻 Getting Started
-
-### Prerequisites
-
-Ensure you have [Bun](https://bun.sh/) installed on your machine.
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <your-repository-url>
-   cd image-convert
-   ```
-
-2. Install dependencies:
-   ```bash
-   bun install
-   ```
-
-### Running the Development Server
-
-Start the local development server:
-
-```bash
-bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
-
-### Building for Production
-
-To create an optimized production build:
-
-```bash
-bun run build
-```
-
-To start the production server:
-
-```bash
-bun run start
-```
 
 ## 🎨 Design Philosophy
 

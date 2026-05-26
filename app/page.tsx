@@ -144,7 +144,7 @@ export default function Home() {
               <ImageIcon className="h-5 w-5 text-red-500 transition-transform group-hover:scale-110" strokeWidth={2.5} />
             </div>
             <span className="text-sm font-bold tracking-widest bg-linear-to-r from-white to-slate-400 bg-clip-text text-transparent uppercase">
-              WebP Convert
+              WebP Converter
             </span>
           </div>
           
@@ -166,7 +166,7 @@ export default function Home() {
               <ImageIcon className="h-6 w-6 text-red-400" />
             </div>
             <CardTitle className="text-3xl font-bold bg-linear-to-r from-white via-red-200 to-white bg-clip-text text-transparent">
-              Image Converter
+              WebP Converter
             </CardTitle>
             <CardDescription className="text-slate-400 mt-2">
               Convert JPG and PNG images to WebP format instantly
