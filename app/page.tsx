@@ -18,9 +18,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -137,23 +137,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)] pointer-events-none" />
 
       {/* Centered Navbar */}
-      <nav className="w-full bg-slate-900/50 backdrop-blur-xl border-b border-slate-700/50 px-6 py-4 sticky top-0 z-50">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2.5 group cursor-pointer">
-            <div className="relative">
-              <ImageIcon className="h-5 w-5 text-red-500 transition-transform group-hover:scale-110" strokeWidth={2.5} />
-            </div>
-            <span className="text-sm font-bold tracking-widest bg-linear-to-r from-white to-slate-400 bg-clip-text text-transparent uppercase">
-              WebP Converter
-            </span>
-          </div>
-          
-          <Badge variant="outline" className="border-slate-700 text-slate-300 gap-1">
-            <FileImage className="h-3 w-3" />
-            JPG/PNG → WebP
-          </Badge>
-        </div>
-      </nav>
+      <Navbar text="Image Resizer" link="/image-resize" />
 
       {/* Main Content Area */}
       <main className="flex-1 flex items-center justify-center p-6 z-10">
